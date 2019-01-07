@@ -37,6 +37,7 @@ pipeline {
                 sh 'echo $(pwd)'
                 sh 'ls .'
                 sh 'ls $(pwd)'
+                sh 'echo this'
             }
         }
     }
