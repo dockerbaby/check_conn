@@ -58,9 +58,9 @@ class TestCheckConn(unittest.TestCase):
         self.assertEquals(check_conn.check_conn('www.google.com',  80), 0)
 
         # Valid hostnames and port numbers that are inaccessible.
-        self.assertEquals(check_conn.check_conn('www.google.com', "8080"), 35)
-        self.assertEquals(check_conn.check_conn('www.google.com', '22'), 35)
-        self.assertEquals(check_conn.check_conn('www.google.com',  9999), 35)
+        self.assertEquals(check_conn.check_conn('www.google.com', "8080"), 11)
+        self.assertEquals(check_conn.check_conn('www.google.com', '22'), 11)
+        self.assertEquals(check_conn.check_conn('www.google.com',  9999), 11)
 
         # Invalid hostnames and port numbers that are inaccessible.
         self.assertEquals(check_conn.check_conn('www.googlekjslkdjflaksdlfjldf.com', '8080'), 1)
