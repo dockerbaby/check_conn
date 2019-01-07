@@ -37,7 +37,7 @@ pipeline {
                 sh 'echo $(pwd)'
                 sh 'ls .'
                 sh 'ls $(pwd)'
-                sh 'echo this'
+                sh 'echo Another-07Jan2019.'
             }
         }
     }
