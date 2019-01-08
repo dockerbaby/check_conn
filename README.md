@@ -3,7 +3,7 @@ Check Network Connection
 
 A little python application designed to check if a network connection is open between a host/webserver and port.
 
-Usage:  python check_conn.py -p www.google.com
+Usage:  python check_conn.py -p 80 www.google.com
 
 A test script is included for testing the application with various command line arguments.
 
